@@ -1,0 +1,44 @@
+body {
+    background-color: #AEFEFF;
+    text-align: center;
+}
+
+.feelings {
+    text-align: left;
+    vertical-align: center;
+    display: inline-block;
+    padding-left: 40px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.form {
+    background-color: beige;
+    width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20 10 10 10;
+}
+
+#event-details {
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+
+.question {
+    text-align: center;
+    vertical-align: top;
+}
+
+.morning {
+    vertical-align: middle;
+}
+
+.afternoon {
+    vertical-align: middle;
+}
+
+.evening {
+    vertical-align: middle;
+}

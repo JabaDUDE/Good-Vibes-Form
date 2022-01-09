@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Good Vibes Form</h1>
+    <div class="form">
+        <h3>Tell us something postive that happened to you today.</h3>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name"><br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter your email address"><br>
+            <br>
+            <label for="quantity">On a scale of 1-10, how good was it?</label>
+            <input type="number" id="quantity" min="1" max="10" placeholder="1-10"><br>
+            <br>
+            <label for="where">Where did it happen?</label>
+            <select name="location of positive event" id="dropdown">
+                <option value="">--Please choose an option--</option>
+                <option value="commute">On my commute</option>
+                <option value="home">At my home</option>
+                <option value="work">At work</option>
+                <option value="street">On the street</option>
+                <option value="other">Other</option>
+            </select><br>
+            <br>
+            <label for="time of day">At what time of day did it happen?</label>
+
+            <div class="time">
+                <ul style="list-style: none;">
+                    <div class="morning">
+                        <li><label for="morning">
+                                <input type="radio">Morning</li></label>
+                    </div>
+                    <div class="afternoon">
+                        <li>
+                            <label for="afternoon">
+                                <input type="radio">Afternoon</label>
+                        </li>
+                    </div>
+                    <div class="evening">
+                        <li>
+                            <label for="evening">
+                                <input type="radio">Evening</label>
+                        </li>
+                    </div>
+
+                </ul>
+            </div><br>
+            <br>
+            <div class="question"><label for="feelings">What emotions did you experience? (Select all that
+                    apply)</label></div>
+            <div class="feelings">
+                <ul style="list-style: none;">
+                    <li><label for="excited"><input type="checkbox">Excited</label></li>
+                    <li>
+                        <label for="humbled">
+                            <input type="checkbox">Humbled
+                        </label>
+                    </li>
+                    <li>
+                        <label for="elated">
+                            <input type="checkbox">Elated
+                        </label>
+                    </li>
+                    <li>
+                        <label for="loved">
+                            <input type="checkbox">loved
+                        </label>
+                    </li>
+                    <li>
+                        <label for="enthusiastic">
+                            <input type="checkbox">Enthusiastic
+                        </label>
+                    </li>
+                </ul>
+            </div><br>
+            <br>
+
+            <label for="experience">Please describe your experience.</label><br>
+            <div class="fields"><textarea name="experience" id="event-details"
+                    style="height:50px; resize:vertical; font-family: Open Sans Condensed;"
+                    placeholder="Enter your experience here..."></textarea></div><br>
+            <br>
+            <button type="button" id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
