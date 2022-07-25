@@ -17,12 +17,12 @@
     <h1>Good Vibes Form</h1>
     <div class="form">
         <h3>Tell us something postive that happened to you today.</h3>
-        <form action="">
+        <form action="post">
             <label for="name">Name:</label>
-            <input type="text" placeholder="Enter your name"><br>
+            <input type="text" id="name" placeholder="Enter your name"><br>
             <br>
             <label for="email">Email:</label>
-            <input type="email" placeholder="Enter your email address"><br>
+            <input type="email" id="email" placeholder="Enter your email address"><br>
             <br>
             <label for="quantity">On a scale of 1-10, how good was it?</label>
             <input type="number" id="quantity" min="1" max="10" placeholder="1-10"><br>
@@ -43,18 +43,18 @@
                 <ul class = "time-of-day" style="list-style: none;">
                     <div class="morning">
                         <li><label for="morning">
-                                <input type="radio">Morning</li></label>
+                                <input id="morning" type="radio">Morning</li></label>
                     </div>
                     <div class="afternoon">
                         <li>
                             <label for="afternoon">
-                                <input type="radio">Afternoon</label>
+                                <input id="afternoon" type="radio">Afternoon</label>
                         </li>
                     </div>
                     <div class="evening">
                         <li>
                             <label for="evening">
-                                <input type="radio">Evening</label>
+                                <input id="evening" type="radio">Evening</label>
                         </li>
                     </div>
 
@@ -68,22 +68,22 @@
                     <li><label for="excited"><input type="checkbox">Excited</label></li>
                     <li>
                         <label for="humbled">
-                            <input type="checkbox">Humbled
+                            <input id="humbled" type="checkbox">Humbled
                         </label>
                     </li>
                     <li>
                         <label for="elated">
-                            <input type="checkbox">Elated
+                            <input id="elated" type="checkbox">Elated
                         </label>
                     </li>
                     <li>
                         <label for="loved">
-                            <input type="checkbox">loved
+                            <input id="loved" type="checkbox">loved
                         </label>
                     </li>
                     <li>
                         <label for="enthusiastic">
-                            <input type="checkbox">Enthusiastic
+                            <input id="enthusiastic" type="checkbox">Enthusiastic
                         </label>
                     </li>
                 </ul>
