@@ -7,7 +7,19 @@ app.get("/", function (req, res) {
 
   res.sendFile(__dirname + "/index.html");
 });
+
+app.post("/", function (req, res) {
+    //TODO: app crashed in nodemon due to whatever is happening here...
+    const request = https.request( function(response){
+
+        if (response.statusCode === 200){
+          res.sendFile(__dirname + '/vibe-sucess.html')
+        }else{
+          res.sendFile(__dirname + '/vibe-fail.html')
+        }
+         
+})
 //TODO: Set up a page that the form goes to when it is submitted, a 'good vibes submitted' page
-app.listen(3000, function () {
-  console.log("Server running on port 3000");
+app.listen(process.env.PORT || 5000, function () {
+  console.log("This server is running on port 5000");
 });
